@@ -1,7 +1,7 @@
-let rec concat_lines acc = 
-  match acc with 
-  | [] -> ""
-  | h :: t -> h ^ "\n" ^ concat_lines t
+(* let rec concat_lines acc = *) 
+(*   match acc with *) 
+(*   | [] -> "" *)
+(*   | h :: t -> h ^ "\n" ^ concat_lines t *)
 
 let read_file filename = 
   let file = open_in filename in

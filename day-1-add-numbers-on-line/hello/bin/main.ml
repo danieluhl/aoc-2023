@@ -19,5 +19,39 @@ let sum_from_int_lines =
 let lines = Hello.Read.read_file "input.txt"
 
 let () = Printf.printf "%d\n" (str_lines_to_int lines |> sum_from_int_lines)
-      
+
+type search_num = {
+  num: int;
+  str: string;
+  dig: string;
+}
+
+let num_searches = [
+  {num = 1; str = "one"; dig = "1"},
+  {num = 2; str = "two"; dig = "2"},
+  {num = 3; str = "three"; dig = "3"},
+  {num = 4; str = "four"; dig = "4"},
+  {num = 5; str = "five"; dig = "5"},
+  {num = 6; str = "six"; dig = "6"},
+  {num = 7; str = "seven"; dig = "7"},
+  {num = 8; str = "eight"; dig = "8"},
+  {num = 9; str = "nine"; dig = "9"}
+]
+
+let get_first_index str substr = 
+  try
+    let re = Str.
+
+let int_from_line_2 line =
+  let small = List.fold_left (fun acc x -> )
+
+
+
+(*
+
+get the index of each number in the list, both digit and string
+
+store the largest and smallest as we go
+
+*)      
 
