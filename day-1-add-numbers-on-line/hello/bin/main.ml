@@ -1,5 +1,3 @@
-
-
 let is_char_int c = 
   let code = Char.code c in
   code >= Char.code '0' && code <= Char.code '9'
