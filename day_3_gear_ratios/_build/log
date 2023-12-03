@@ -1,0 +1,23 @@
+# dune exec day_3_gear_ratios
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /Users/danieluhl/.cache/dune/db
+# Workspace root: /Users/danieluhl/git/learning/aoc-2023/day_3_gear_ratios
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/Users/danieluhl/git/learning/aoc-2023/day_3_gear_ratios/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; instrument_with = []
+#  }
+$ /Users/danieluhl/.opam/default/bin/ocamlc.opt -config > /var/folders/70/hr9c_fqn2vlfr8c_hvv6p__c0000gn/T/dune_d9f8b7_output
