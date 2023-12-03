@@ -1,0 +1,4 @@
+(lang dune 3.12)
+(name day_2_cube_conundrum)
+(sections (lib .) (bin ../../bin))
+(files (lib (META dune-package opam)) (bin (day_2_cube_conundrum)))
