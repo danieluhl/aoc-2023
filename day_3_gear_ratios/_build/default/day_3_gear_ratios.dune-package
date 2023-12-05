@@ -1,4 +1,0 @@
-(lang dune 3.12)
-(name day_3_gear_ratios)
-(sections (lib .) (bin ../../bin))
-(files (lib (META dune-package opam)) (bin (day_3_gear_ratios)))
