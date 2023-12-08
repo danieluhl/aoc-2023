@@ -1,4 +1,0 @@
-(executable
- (public_name day_1_numbers)
- (name main)
- (libraries str day_1_numbers core))

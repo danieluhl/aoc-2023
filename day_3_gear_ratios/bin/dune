@@ -1,4 +1,0 @@
-(executable
- (public_name day_3_gear_ratios)
- (name main)
- (libraries day_3_gear_ratios core))

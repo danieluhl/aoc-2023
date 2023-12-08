@@ -1,8 +1,0 @@
-lib: [
-  "_build/install/default/lib/day_2_cube_conundrum/META"
-  "_build/install/default/lib/day_2_cube_conundrum/dune-package"
-  "_build/install/default/lib/day_2_cube_conundrum/opam"
-]
-bin: [
-  "_build/install/default/bin/day_2_cube_conundrum"
-]
