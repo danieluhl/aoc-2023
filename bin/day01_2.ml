@@ -6,8 +6,7 @@ type search_num =
   }
 
 let search_num_list =
-  [ { str = "zero"; ch = "0" }
-  ; { str = "one"; ch = "1" }
+  [ { str = "one"; ch = "1" }
   ; { str = "two"; ch = "2" }
   ; { str = "three"; ch = "3" }
   ; { str = "four"; ch = "4" }
@@ -32,7 +31,6 @@ let find_substring_right str substr =
   try
     let regex = Str.regexp_string substr in
     let index = Str.search_backward regex str (String.length str) in
-    Fmt.pr "%s %s %d\n" str substr index;
     Some index
   with
   | _ -> None
@@ -67,7 +65,7 @@ let get_left_number line =
 ;;
 
 let get_right_number line =
-  List.fold search_num_list ~init:{ ch = "0"; i = -1 } ~f:(fun acc x ->
+  List.fold search_num_list ~init:{ ch = ""; i = -1 } ~f:(fun acc x ->
     let right_ch_i =
       match find_substring_right line x.ch with
       | Some x -> x
@@ -91,11 +89,10 @@ let () =
     List.fold
       ~init:0
       ~f:(fun acc line ->
-        let { ch = left_ch; i = left_i } = get_left_number line in
-        let { ch = right_ch; i = right_i } = get_right_number line in
-        if left_i = right_i
-        then acc + int_of_string left_ch
-        else acc + int_of_string (left_ch ^ right_ch))
+        let { ch = left_ch; _ } = get_left_number line in
+        let { ch = right_ch; _ } = get_right_number line in
+        Fmt.pr "%s %s\n" left_ch right_ch;
+        acc + int_of_string (left_ch ^ right_ch))
       lines
   in
   Printf.printf "\nresult: %d\n" result
