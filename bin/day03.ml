@@ -45,6 +45,8 @@ let rec get_sum matrix y x num sum has_symbol =
   (* Printf.printf "num: %s\n" num; *)
   (* Printf.printf "sum: %d\n" sum; *)
   (* Printf.printf "has_symbol: %b\n" has_symbol; *)
+  (* let result = Bool.compare has_symbol false in *)
+  (* Fmt.pr "@.%d" result; *)
   if is_digit ch
   then (
     let next_has_symbol =
