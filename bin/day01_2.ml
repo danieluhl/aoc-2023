@@ -84,7 +84,7 @@ let get_right_number line =
 ;;
 
 let () =
-  let lines = Read.read_file "inputs/day01.txt" in
+  let lines = Aoc_utils.read_file "inputs/day01.txt" in
   let result =
     List.fold
       ~init:0

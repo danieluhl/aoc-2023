@@ -1,7 +1,7 @@
 open Core
 
-let lines = Read.read_file "inputs/day04.txt"
-(* let lines = Read.read_file "inputs/test.txt" *)
+let lines = Aoc_utils.read_file "inputs/day04.txt"
+(* let lines = Aoc_utils.read_file "inputs/test.txt" *)
 
 let games =
   let game_right =
