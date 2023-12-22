@@ -14,7 +14,7 @@ open Core
    if it's not a number, ignore and move to next character
 *)
 
-let lines = Read.read_file "inputs/day03.txt"
+let lines = Aoc_utils.read_file "inputs/day03.txt"
 
 let matrix =
   Array.of_list_map lines ~f:(fun line -> Array.of_list (String.to_list line))

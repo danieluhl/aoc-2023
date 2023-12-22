@@ -2,3 +2,6 @@
  (public_names day01 day01_2 day02 day03 day04 day05 day06 day07 day08 )
  (names day01 day01_2 day02 day03 day04 day05 day06 day07 day08)
  (libraries read fmt core str))
+(env
+  (dev
+    (flags (:standard -warn-error -A))))

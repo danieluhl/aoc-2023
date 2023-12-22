@@ -1,2 +1,6 @@
 (library
- (name read))
+ (name aoc_utils)
+ (libraries fmt core str))
+(env
+  (dev
+    (flags (:standard -warn-error -A))))
