@@ -18,3 +18,10 @@ let read_file filename =
   In_channel.close file;
   lines
 ;;
+
+(* Get the nth element from a list of strings *)
+let split_take_nth str nth del =
+  match List.nth (String.split str ~on:del) nth with
+  | None -> ""
+  | Some x -> x
+;;
